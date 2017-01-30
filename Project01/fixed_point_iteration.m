@@ -13,7 +13,8 @@ function fixed_point_iteration
     fprintf('\txc = %.10f\n', compute_fixed_point(@(x) log(7 - x), 2));
     
     fprintf('Q1c:\n\tg(x) = ln(4-sin(x)) = x\n');
-    fprintf('\txc = %.10f\n', compute_fixed_point(@(x) log(4 - sin(x)), 2));
+    fprintf('\txc = %.10f\n', ...
+        compute_fixed_point(@(x) log(4 - sin(x)), 2));
 
     A = 3.;
     g = @(x) (x + A / x) / 2.;
@@ -39,7 +40,7 @@ end
 % Compute the fixed point of g(x).
 function xc = compute_fixed_point(g, x0, tol)
     if nargin < 3
-        tol = 1e-7;
+        tol = 1e-9;
     end
 
     prev_x = x0;

@@ -37,18 +37,27 @@ function bisection_method()
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Q3a
     fprintf('Q3a:\n\tf(x) = 2x^3 - 6x - 1\n');
-    f = @(x) 2.0 * x^3 - 6 * x - 1;
+    f = @(x) 2.0 * x.^3 - 6 * x - 1;
 
+    x = linspace(-2, 2);
+    y = f(x);
+    figure;
+    plot(x, y, x, 0*y);
+    title('Q3a: f(x) = 2x^3 - 6x - 1');
+    
+    fprintf('\n\ta, b = -2, -1\n');
     r = compute_root(f, -2, -1);
     fprintf('\tr1 = %.10f\n', r);
     y = -1.64178352745293;
     print_errors(f, r, y);
 
+    fprintf('\n\ta, b = -1, 0\n');
     r = compute_root(f, -1, 0);
     fprintf('\tr2 = %.10f\n', r);
     y = -0.168254401781027;
     print_errors(f, r, y);
 
+    fprintf('\n\ta, b = 1, 2\n');
     r = compute_root(f, 1, 2);
     fprintf('\tr3 = %.10f\n', r);
     y = 1.81003792923395;
@@ -57,18 +66,27 @@ function bisection_method()
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Q3b
     fprintf('Q3b:\n\tf(x) = e^(x-2) + x^3 - x\n');
-    f = @(x) exp(x - 2) + x^3 - x;
+    f = @(x) exp(x - 2) + x.^3 - x;
 
+    x = linspace(-2, 2);
+    y = f(x);
+    figure;
+    plot(x, y, x, 0*y);
+    title('Q3b: f(x) = e^{x-2} + x^3 - x');
+    
+    fprintf('\n\ta, b = -2, -1\n');
     r = compute_root(f, -2, -1);
     fprintf('\tr1 = %.10f\n', r);
     y = -1.0234821948582364944;
     print_errors(f, r, y);
 
+    fprintf('\n\ta, b = -0.5, -0.5\n');
     r = compute_root(f, -0.5, 0.5);
     fprintf('\tr2 = %.10f\n', r);
     y = 0.16382224325010849634;
     print_errors(f, r, y);
 
+    fprintf('\n\ta, b = 0.5, 1.5\n');
     r = compute_root(f, 0.5, 1.5);
     fprintf('\tr3 = %.10f\n', r);
     y = 0.78894138905554556637;
@@ -77,18 +95,27 @@ function bisection_method()
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Q3c
     fprintf('Q3c:\n\tf(x) = 1 + 5x - 6x^3 - e^(2x)\n');
-    f = @(x) 1 + 5 * x - 6 * x^3 - exp(2 * x);
+    f = @(x) 1 + 5 * x - 6 * x.^3 - exp(2 * x);
 
+    x = linspace(-1.5, 1.5);
+    y = f(x);
+    figure;
+    plot(x, y, x, 0*y);
+    title('Q3c: f(x) = 1 + 5x - 6x^3 - e^{2x}');
+    
+    fprintf('\n\ta, b = -1.5, -0.5\n');
     r = compute_root(f, -1.5, -0.5);
     fprintf('\tr1 = %.10f\n', r);
     y = -0.81809373448119542124;
     print_errors(f, r, y);
 
+    fprintf('\n\ta, b = -0.6, 0.4\n');
     r = compute_root(f, -0.6, 0.4);
     fprintf('\tr2 = %.10f\n', r);
     y = 0.0;
     print_errors(f, r, y);
 
+    fprintf('\n\ta, b = 0.5, 1.5\n');
     r = compute_root(f, 0.5, 1.5);
     fprintf('\tr3 = %.10f\n', r);
     y = 0.50630828634622119599;
