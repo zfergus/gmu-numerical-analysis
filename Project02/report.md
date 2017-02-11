@@ -40,7 +40,7 @@ number of steps = 84
 
 \begin{equation}
 \begin{matrix}
-g_2(x) = {{3x^4 - 7x^3 + 3x^2 + 2x} \over {e^x}} = x \\
+g_4(x) = \ln(3x^3 - 7x^2 + 3x + 2) = x \\
 r4 = 6.07305409 \\
 x_0 = 6 \\
 number of steps = 34
