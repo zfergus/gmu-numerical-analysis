@@ -49,18 +49,18 @@ function newtons_method
     fprintf('Q9:\n\tf(x) = 14xe^(x-2) - 12e^(x-2) - 7x^3 + 20x^2 - 26x + 12\n');
     f  = @(x) 14*x*exp(x-2) - 12*exp(x-2) - 7*x^3 + 20*x^2 - 26*x + 12;
     fp = @(x) 14*x*exp(x-2) + 2*exp(x-2) - 21*x^2 + 40*x - 26;
-    fpp = @(x) 14*x*exp(x-2) + 4*exp(x-2) - 42*x + 40
+    fpp = @(x) 14*x*exp(x-2) + 4*exp(x-2) - 42*x + 40;
     x0 = 0;
     r = compute_root(f, fp, x0, 1e-9, 1, 2);
     fprintf('\tr1 = %.10f\n', r);
     fprintf('\tM = lim i->inf (e_(i+1)/(e_i)^2) = %.10f\n\n', ...
-        abs(fpp(r)/(2*fp(r))))
+        abs(fpp(r)/(2*fp(r))));
 
     x0 = 3.0;
     r = compute_root(f, fp, x0, 1e-9, 1, 1);
     fprintf('\tr2 = %.10f\n', r);
-    fprintf('\tmultiplicity of r2 is 3 -> ')
-    fprintf('S = lim i->inf (e_(i+1)/e_i) = %.10f\n', 2/3)
+    fprintf('\tmultiplicity of r2 is 3 -> ');
+    fprintf('S = lim i->inf (e_(i+1)/e_i) = %.10f\n', 2/3);
 end
 
 
