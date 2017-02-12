@@ -1,4 +1,4 @@
-# MATH 446: Project 02
+# MATH 446: Project 03
 ### Zachary Ferguson
 
 ## Contents
