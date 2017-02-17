@@ -1,0 +1,56 @@
+MATH 446: Project 04
+Written by Zachary Ferguson
+
+Secant Method:
+
+Q1a:
+	f(x) = x^3 - 2x - 2 = 0
+	x0 = 1, x1 = 2
+	n = 6
+	xc = 1.7692923542
+Q1b:
+	f(x) = e^x + x - 7 = 0
+	x0 = 1, x1 = 2
+	n = 6
+	xc = 1.6728216986
+Q1c:
+	f(x) = e^x + sin(x) - 4 = 0
+	x0 = 1, x1 = 2
+	n = 5
+	xc = 1.1299804986
+
+Method of False Position:
+
+Q2a:
+	f(x) = x^3 - 2x - 2 = 0
+	x0 = 1, x1 = 2
+	n = 13
+	xc = 1.7692923542
+Q2b:
+	f(x) = e^x + x - 7 = 0
+	x0 = 1, x1 = 2
+	n = 7
+	xc = 1.6728216986
+Q2c:
+	f(x) = e^x + sin(x) - 4 = 0
+	x0 = 1, x1 = 2
+	n = 5
+	xc = 1.1299804986
+
+Inverse Quadratic Interpolation:
+
+Q3a:
+	f(x) = x^3 - 2x - 2 = 0
+	x0 = 1, x1 = 2, x2 = 0
+	n = 30
+	xc = 1.7692923542
+Q3b:
+	f(x) = e^x + x - 7 = 0
+	x0 = 1, x1 = 2, x2 = 0
+	n = 5
+	xc = 1.6728216986
+Q3c:
+	f(x) = e^x + sin(x) - 4 = 0
+	x0 = 1, x1 = 2, x2 = 0
+	n = 4
+	xc = 1.1299804987
