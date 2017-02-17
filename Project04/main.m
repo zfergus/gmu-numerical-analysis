@@ -52,9 +52,9 @@ function main()
     fprintf('\txc = %.10f\n', method_of_false_position(f3, x0, x1));
 
     fprintf('\nInverse Quadratic Interpolation:\n\n');
-    
+
     x2 = 0;
-    
+
     % Q2a
     fprintf('Q3a:\n\t%s\n', f1_str);
     fprintf('\t%s, x2 = %d\n', init_guess_str, x2);
