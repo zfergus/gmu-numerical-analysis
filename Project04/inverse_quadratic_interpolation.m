@@ -1,7 +1,7 @@
 % Computes the roots of a function using the Inverse Quadratic Interpolation.
 % Written by Zachary Ferguson
 
-function xc = inverse_quadratic_interpolation(f, x0, x1, x2 tol)
+function xc = inverse_quadratic_interpolation(f, x0, x1, x2, tol)
     % Compute the root to f(x) using the Inverse Quadratic Interpolation
     % Input:
     %   f - function to find the roots of
@@ -17,7 +17,7 @@ function xc = inverse_quadratic_interpolation(f, x0, x1, x2 tol)
     a = x0;
     b = x1;
     c = x2;
-    div = @(e, f) f(e) / f(f);
+    div = @(x,y) (f(x) / f(y));
     while (abs(f(c)) >= 0.5 * tol)
         q = div(a, b);
         r = div(c, b);

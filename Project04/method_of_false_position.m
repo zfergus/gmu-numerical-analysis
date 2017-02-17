@@ -24,9 +24,9 @@ function xc = method_of_false_position(f, x0, x1, tol)
             a = c;
         end
         % Next value of c closer to the root
-        c = (b * f(a) - a * f(b)) / (f(a) - f(b))
+        c = (b * f(a) - a * f(b)) / (f(a) - f(b));
         n = n + 1;
     end
-    fprintf('\tn = %d\n', n)
+    fprintf('\tn = %d\n', n);
     xc = c;
 end

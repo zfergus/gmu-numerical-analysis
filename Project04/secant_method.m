@@ -14,8 +14,8 @@ function xc = secant_method(f, x0, x1, tol)
     end
 
     n = 0;
-    xi = x1
-    xi_1 = x0
+    xi = x1;
+    xi_1 = x0;
     while (abs(f(xi)) >= 0.5 * tol)
         x = xi - (f(xi) * (xi - xi_1)) / (f(xi) - f(xi_1));
         xi_1 = xi;
