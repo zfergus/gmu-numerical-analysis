@@ -1,3 +1,6 @@
+MATH 446: Project 03
+Written by Zachary Ferguson
+
 Q1a:
 	f(x) = x^3 - 2x - 2 = 0
 	x0 = 2

@@ -1,0 +1,135 @@
+MATH 446: Project 01
+Written by Zachary Ferguson
+
+Bisection Method:
+
+Q1a:
+	f(x) = x^3 - 9
+	n = 24
+	r = 2.0800838172
+	Forward error: 0.0000000058
+	Backward error: 0.0000000754
+Q1b:
+	f(x) = 3x^3 + x^2 - x - 5
+	n = 24
+	r = 1.1697262228
+	Forward error: 0.0000000029
+	Backward error: 0.0000000396
+Q1c:
+	f(x) = cos^2(x) - x + 6
+	n = 24
+	r = 6.7760923207
+	Forward error: 0.0000000044
+	Backward error: 0.0000000080
+Q3a:
+	f(x) = 2x^3 - 6x - 1
+
+	a, b = -2, -1
+	n = 24
+	r1 = -1.6417835057
+	Forward error: 0.0000000218
+	Backward error: 0.0000002215
+
+	a, b = -1, 0
+	n = 24
+	r2 = -0.1682544053
+	Forward error: 0.0000000035
+	Backward error: 0.0000000203
+
+	a, b = 1, 2
+	n = 24
+	r3 = 1.8100379407
+	Forward error: 0.0000000115
+	Backward error: 0.0000001572
+Q3b:
+	f(x) = e^(x-2) + x^3 - x
+
+	a, b = -2, -1
+	n = 24
+	r1 = -1.0234821737
+	Forward error: 0.0000000212
+	Backward error: 0.0000000464
+
+	a, b = -0.5, -0.5
+	n = 24
+	r2 = 0.1638222635
+	Forward error: 0.0000000202
+	Backward error: 0.0000000154
+
+	a, b = 0.5, 1.5
+	n = 24
+	r3 = 0.7889414132
+	Forward error: 0.0000000241
+	Backward error: 0.0000000281
+Q3c:
+	f(x) = 1 + 5x - 6x^3 - e^(2x)
+
+	a, b = -1.5, -0.5
+	n = 24
+	r1 = -0.8180937469
+	Forward error: 0.0000000124
+	Backward error: 0.0000000924
+
+	a, b = -0.6, 0.4
+	n = 24
+	r2 = -0.0000000060
+	Forward error: 0.0000000060
+	Backward error: 0.0000000179
+
+	a, b = 0.5, 1.5
+	n = 24
+	r3 = 0.5063082874
+	Forward error: 0.0000000010
+	Backward error: 0.0000000053
+Q4a:
+	f(x) = x^2 - A
+	A = 2, (a, b) = (1, 2)
+	n = 24
+	r = 1.4142135680
+	Forward error: 0.0000000056
+	Backward error: 0.0000000158
+Q4b:
+	A = 3, (a, b) = (1, 2)
+	n = 24
+	r = 1.7320508063
+	Forward error: 0.0000000013
+	Backward error: 0.0000000045
+Q4c:
+	A = 5, (a, b) = (2, 3)
+	n = 24
+	r = 2.2360679805
+	Forward error: 0.0000000030
+	Backward error: 0.0000000135
+
+Fixed Point Iteration:
+
+Q1a:
+	g(x) = (2x+2)^(1/3) = x
+	n = 14
+	xc = 1.7692923543
+Q1b:
+	g(x) = ln(7-x) = x
+	n = 14
+	xc = 1.6728216987
+Q1c:
+	g(x) = ln(4-sin(x)) = x
+	n = 10
+	xc = 1.1299804987
+Q3a:
+	g(x) = (x + 3 / x) / 2
+	x0 = 2
+	n = 5
+	xc = 1.7320508076
+Q3b:
+	g(x) = (x + 5 / x) / 2
+	x0 = 2
+	n = 4
+	xc = 2.2360679775
+Q5:
+	g(x) = cos^2(x)
+	n = 325
+	xc = 0.6417141321
+
+	d/dx g(x) = -2*cos(x)*sin(x)
+	|d/dx g(xc)| = 0.9589931641
+	Therefore g(x) is locally convergent to xc.
