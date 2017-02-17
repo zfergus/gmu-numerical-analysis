@@ -89,7 +89,7 @@ number of steps = 34
 
 ### Fixed Point Iterative Method
 
-```Matlab
+```matlab
 % Computes the fixed point of a function using the FPI.
 % Written by Zachary Ferguson
 
@@ -130,7 +130,7 @@ end
 
 ### Main
 
-```Matlab
+```matlab
 % MATH 446: Project 02
 % Written by Zachary Ferguson
 

@@ -94,7 +94,7 @@ f(r_2) = f'(r_2) = f''(r_2) = 0 \rightarrow \text{multiplicity of } r_2
 
 ### Newton's Method
 
-```Matlab
+```matlab
 % Computes the roots of a function using the Newton's Method.
 % Written by Zachary Ferguson
 
@@ -143,7 +143,7 @@ end
 
 ### Main
 
-```Matlab
+```matlab
 % MATH 446: Project 03
 % Written by Zachary Ferguson
 

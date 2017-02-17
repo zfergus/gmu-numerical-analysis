@@ -10,9 +10,11 @@
 2. Output
 3. Plots
 
+## Code
+
 ### Bisection Method
 
-```Matlab
+```matlab
 % Computes the root of a function using the bisection method.
 % Written by Zachary Ferguson
 
@@ -45,7 +47,7 @@ end
 
 ### Fixed Point Iterative Method
 
-```Matlab
+```matlab
 % Computes the fixed point of a function using the FPI.
 % Written by Zachary Ferguson
 
@@ -76,7 +78,7 @@ end
 
 ### Main
 
-```Matlab
+```matlab
 % MATH 446: Project 01
 % Written by Zachary Ferguson
 
@@ -415,14 +417,8 @@ Q5:
 
 ## Plots
 
-### Bisection Method Q3a
+![P30 Q3a](P30-Q3a.png "P30 Q3a")
 
-<img src="P30-Q3a.png"/>
+![P30 Q3b](P30-Q3b.png "P30 Q3b")
 
-### Bisection Method Q3b
-
-<img src="P30-Q3b.png"/>
-
-### Bisection Method Q3c
-
-<img src="P30-Q3c.png"/>
+![P30 Q3c](P30-Q3c.png "P30 Q3c")
