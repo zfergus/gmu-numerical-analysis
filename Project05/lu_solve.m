@@ -10,8 +10,10 @@ function x = lu_solve(L, U, b)
     % Output:
     %   x - solved value
 
+    n = size(L, 1);
+    
     % Perform Forward Substitution
-    c = zeros(size(b))
+    c = zeros(size(b));
     for i = 1 : n
         for j = 1 : i-1
             b(i) = b(i) - L(i, j) * c(j);
@@ -21,7 +23,7 @@ function x = lu_solve(L, U, b)
 
 
     % Perform Back Substitution
-    x = zeros(size(b))
+    x = zeros(size(b));
     for i = n : -1 : 1
         for j = i+1 : n
             c(i) = c(i) - U(i, j) * x(j);

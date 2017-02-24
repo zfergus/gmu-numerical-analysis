@@ -10,9 +10,11 @@ function x = gaussian_elimination(A, b, eps)
     % Output:
     %   x - solved value
     if nargin < 3
-            tol = 1e-9;
+            eps = 1e-9;
     end
 
+    n = size(A, 1);
+    
     % Elimination step (O(2/3 * n^3))
     for j = 1 : n-1
         if abs(A(j, j)) < eps
@@ -20,12 +22,14 @@ function x = gaussian_elimination(A, b, eps)
         end
         for i = j+1 : n
             mult = A(i, j)/A(j, j);
-            A(i) = A(i) - mult * A(j); % Row operation
-            b(i) = b(i) - mult * b(i);
+            for k = j+1 : n
+                A(i, k) = A(i, k) - mult * A(j, k); % Row operation
+            end
+            b(i) = b(i) - mult * b(j);
         end
     end
 
-    x = zeros(size(b))
+    x = zeros(size(b));
 
     % Perform Back Substitution
     for i = n : -1 : 1

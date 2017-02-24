@@ -7,7 +7,7 @@ function H = hilbert_matrix(n)
     %   n - size of matrix
     % Output:
     %   H - nxn Hilbert matrix
-    H = zeros((n, n));
+    H = zeros(n, n);
 
     for i = 1 : n
         for j = 1 : n

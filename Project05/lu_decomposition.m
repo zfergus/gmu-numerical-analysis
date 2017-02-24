@@ -9,11 +9,13 @@ function [L, U] = lu_decomposition(A, eps)
     % Output:
     %   [L, U] - deomposed version of A
     if nargin < 2
-            tol = 1e-9;
+            eps = 1e-9;
     end
 
+    n = size(A, 1);
+    
     % L is the multipliers of A to get U
-    L = eye(size(A, 1));
+    L = eye(n);
 
     % Elimination step (O(2/3 * n^3))
     for j = 1 : n-1
@@ -22,11 +24,13 @@ function [L, U] = lu_decomposition(A, eps)
         end
         for i = j+1 : n
             mult = A(i, j) / A(j, j);
-            A(i) = A(i) - mult * A(j); % Row operation
-            L(i, j) = mult
+            for k = j : n
+                A(i, k) = A(i, k) - mult * A(j, k); % Row operation
+            end
+            L(i, j) = mult;
         end
     end
 
     % U is the row echelon form of A
-    U = A
+    U = A;
 end
