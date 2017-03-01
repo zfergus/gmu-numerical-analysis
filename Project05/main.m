@@ -12,14 +12,14 @@ function main()
     x = gaussian_elimination(A, b);
     fprintf('Q1a:\n');
     print_Axb(A, x, b);
-    
+
     % Q1b
     A = [1 2 -1 ; 0 3 1 ; 2 -1 1];
     b = [2 ; 4 ; 2];
     x = gaussian_elimination(A, b);
     fprintf('Q1b:\n');
     print_Axb(A, x, b);
-    
+
     % Q1c
     A = [2 1 -4 ; 1 -1 1 ; -1 3 -2];
     b = [-7 ; -2 ; 6];
@@ -93,7 +93,7 @@ function print_Axb(A, x, b, nameA)
     if nargin < 4
         nameA = 'A';
     end
-    
+
     fprintf('\t%s = \n', nameA);
 	disp(A);
     fprintf('\tb = \n');
@@ -108,7 +108,7 @@ function print_ALU(A, L, U, nameA)
     if nargin < 4
         nameA = 'A';
     end
-    
+
     fprintf('\t%s =\n', nameA);
     disp(A);
     fprintf('\tL =\n');
@@ -124,7 +124,7 @@ function print_AbLUx(A, b, L, U, x, nameA)
     if nargin < 6
         nameA = 'A';
     end
-  
+
     fprintf('\t%s =\n', nameA);
     disp(A);
     fprintf('\tb =\n');
