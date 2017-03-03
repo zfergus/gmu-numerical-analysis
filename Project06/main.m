@@ -11,7 +11,12 @@ function main()
 
     % Q1b
     n = 10;
-    fprintf('Q1b:\n');
+    fprintf('\nQ1b:\n');
+    question1(n);
+
+    % Q5
+    n = 12;
+    fprintf('\nQ5:\n');
     question1(n);
 end
 
@@ -40,11 +45,11 @@ function question1(n)
     b = A * x;
 
     fprintf('\tA =\n'); disp(A);
-    fprintf('\tx =\n'); disp(x);
-    fprintf('\tb = Ax =\n'); disp(b);
+    fprintf('\n\tx =\n'); disp(x);
+    fprintf('\n\tb = Ax =\n'); disp(b);
 
     xc = A \ b; % Solve for xc
-    fprintf('\txc = \n'); disp(xc);
+    fprintf('\n\txc = \n'); disp(xc);
 
     BE = norm(b - A*xc, inf); % infiniry norm
     FE = norm(x - xc, inf);
@@ -53,7 +58,7 @@ function question1(n)
     EMF = RFE / RBE;
     condA = cond(A, inf); % Condition number of A
 
-    fprintf('\tBackwards Error = %g\n', BE);
+    fprintf('\n\tBackwards Error = %g\n', BE);
     fprintf('\tForwards Error = %g\n', FE);
     fprintf('\tRelative BE = %g\n', RBE);
     fprintf('\tRelative FE = %g\n', RFE);
