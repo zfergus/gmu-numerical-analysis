@@ -6,12 +6,12 @@ function main()
 
     % Q1a
     n = 6;
-    fprinf('Q1a:\n');
+    fprintf('Q1a:\n');
     question1(n);
 
     % Q1b
     n = 10;
-    fprinf('Q1b:\n');
+    fprintf('Q1b:\n');
     question1(n);
 end
 
@@ -34,23 +34,29 @@ end
 
 function question1(n)
     % Prints out appropriate information to answer question 1.
-    fprinf('\tn = %d\n', n);
+    fprintf('\tn = %d\n', n);
     A = build_matrix(n);
-    x = ones(n);
+    x = ones(n, 1);
     b = A * x;
+
     fprintf('\tA =\n'); disp(A);
     fprintf('\tx =\n'); disp(x);
     fprintf('\tb = Ax =\n'); disp(b);
+
     xc = A \ b; % Solve for xc
     fprintf('\txc = \n'); disp(xc);
+
     BE = norm(b - A*xc, inf); % infiniry norm
     FE = norm(x - xc, inf);
     RBE = BE / norm(b, inf);
     RFE = FE / norm(x, inf);
     EMF = RFE / RBE;
     condA = cond(A, inf); % Condition number of A
-    fprintf('Backwards Error = %g\n\tForwards Error = %g\n
-        \tRelative BE = %g\n\tRelative FE = %g\n
-        \tError Magnification Factor = %g\n\tcond(A) = %g', ...
-        BE, FE, RBE, RFE, EMF, condA);
+
+    fprintf('\tBackwards Error = %g\n', BE);
+    fprintf('\tForwards Error = %g\n', FE);
+    fprintf('\tRelative BE = %g\n', RBE);
+    fprintf('\tRelative FE = %g\n', RFE);
+    fprintf('\tError Magnification Factor = %g\n', EMF);
+    fprintf('\tcond(A) = %g\n', condA);
 end
