@@ -1,0 +1,31 @@
+MATH 446: Project 07
+Written by Zachary Ferguson
+
+Jacobi Method:
+
+Q1a:
+	n=100
+	Number of steps to find solution: 35
+	Backwards Error = 6.86783e-07
+	Forwards Error = 6.86761e-07
+Q1b:
+	n=100000
+	Number of steps to find solution: 35
+	Backwards Error = 6.86783e-07
+	Forwards Error = 6.86761e-07
+
+Gauss-Seidel Method:
+
+Q5a:
+	n=100
+	Number of steps to find solution: 21
+	Backwards Error = 4.77934e-07
+	Forwards Error = 4.76837e-07
+
+Successive Over Relaxation:
+
+Q5b:
+	n=100
+	Number of steps to find solution: 18
+	Backwards Error = 2.63134e-07
+	Forwards Error = 6.61383e-08
