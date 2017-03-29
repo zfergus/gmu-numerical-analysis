@@ -1,0 +1,97 @@
+MATH 446: Project 09
+Written by Zachary Ferguson
+
+Q5a:
+        Intersection Point 1:
+        x0 =
+   0
+   0
+   0
+        Number of steps to solve to 1e-10 accuracy: 5
+        xc =
+   0.33333
+   0.33333
+   0.33333
+        Intersection Point 2:
+        x0 =
+   2
+   2
+   2
+        Number of steps to solve to 1e-10 accuracy: 6
+        xc =
+   1.0000
+   1.0000
+   1.0000
+Q5b:
+        Intersection Point 1:
+        x0 =
+  -2
+  -2
+  -2
+        Number of steps to solve to 1e-10 accuracy: 11
+        xc =
+   1.0000
+   2.0000
+   3.0000
+        Intersection Point 2:
+        x0 =
+   2
+   2
+   2
+        Number of steps to solve to 1e-10 accuracy: 5
+        xc =
+   1.8889
+   2.4444
+   2.1111
+Q9a:
+        Intersection Point 1:
+        Number of steps to solve to 1e-10 accuracy: 9
+        xc =
+   0.33333
+   0.33333
+   0.33333
+        Intersection Point 2:
+        Number of steps to solve to 1e-10 accuracy: 15
+        xc =
+   1.00000
+   1.00000
+   1.00000
+Q9b:
+        Intersection Point 1:
+        Number of steps to solve to 1e-10 accuracy: 20
+        xc =
+   1.0000
+   2.0000
+   3.0000
+        Intersection Point 2:
+        Number of steps to solve to 1e-10 accuracy: 21
+        xc =
+   1.8889
+   2.4444
+   2.1111
+Q11a:
+        Intersection Point 1:
+        Number of steps to solve to 1e-10 accuracy: 9
+        xc =
+   0.33333
+   0.33333
+   0.33333
+        Intersection Point 2:
+        Number of steps to solve to 1e-10 accuracy: 13
+        xc =
+   1.00000
+   1.00000
+   1.00000
+Q11b:
+        Intersection Point 1:
+        Number of steps to solve to 1e-10 accuracy: 20
+        xc =
+   1.0000
+   2.0000
+   3.0000
+        Intersection Point 2:
+        Number of steps to solve to 1e-10 accuracy: 21
+        xc =
+   1.8889
+   2.4444
+   2.1111
