@@ -36,7 +36,7 @@ function xc = broydens_method_1(f, A0, x0, tol, figHandle)
         fe = norm(f(xc), inf);
         errors = [errors fe];
     end
-    fprintf('\tNumber of steps to solve to %g accuracy: %d\n', tol, n_steps);
+    fprintf('Number of steps to solve to %g accuracy: %d\n\n', tol, n_steps);
 
     % Display the errors per iteration.
     if figHandle ~= false

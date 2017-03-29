@@ -1,97 +1,206 @@
 MATH 446: Project 09
 Written by Zachary Ferguson
 
-Q5a:
-        Intersection Point 1:
-        x0 =
-   0
-   0
-   0
-        Number of steps to solve to 1e-10 accuracy: 5
-        xc =
-   0.33333
-   0.33333
-   0.33333
-        Intersection Point 2:
-        x0 =
-   2
-   2
-   2
-        Number of steps to solve to 1e-10 accuracy: 6
-        xc =
-   1.0000
-   1.0000
-   1.0000
-Q5b:
-        Intersection Point 1:
-        x0 =
-  -2
-  -2
-  -2
-        Number of steps to solve to 1e-10 accuracy: 11
-        xc =
-   1.0000
-   2.0000
-   3.0000
-        Intersection Point 2:
-        x0 =
-   2
-   2
-   2
-        Number of steps to solve to 1e-10 accuracy: 5
-        xc =
-   1.8889
-   2.4444
-   2.1111
-Q9a:
-        Intersection Point 1:
-        Number of steps to solve to 1e-10 accuracy: 9
-        xc =
-   0.33333
-   0.33333
-   0.33333
-        Intersection Point 2:
-        Number of steps to solve to 1e-10 accuracy: 15
-        xc =
-   1.00000
-   1.00000
-   1.00000
-Q9b:
-        Intersection Point 1:
-        Number of steps to solve to 1e-10 accuracy: 20
-        xc =
-   1.0000
-   2.0000
-   3.0000
-        Intersection Point 2:
-        Number of steps to solve to 1e-10 accuracy: 21
-        xc =
-   1.8889
-   2.4444
-   2.1111
-Q11a:
-        Intersection Point 1:
-        Number of steps to solve to 1e-10 accuracy: 9
-        xc =
-   0.33333
-   0.33333
-   0.33333
-        Intersection Point 2:
-        Number of steps to solve to 1e-10 accuracy: 13
-        xc =
-   1.00000
-   1.00000
-   1.00000
-Q11b:
-        Intersection Point 1:
-        Number of steps to solve to 1e-10 accuracy: 20
-        xc =
-   1.0000
-   2.0000
-   3.0000
-        Intersection Point 2:
-        Number of steps to solve to 1e-10 accuracy: 21
-        xc =
-   1.8889
-   2.4444
-   2.1111
+=== Q5a: ===
+
+--- Solution Point 1: ---
+x0 =
+     0
+     0
+     0
+
+Number of steps to solve to 1e-12 accuracy: 5
+
+xc =
+    0.3333
+    0.3333
+    0.3333
+
+Backwards Error = 1.11022e-15
+Forwards Error = 4.44089e-16
+
+--- Solution Point 2: ---
+x0 =
+     2
+     2
+     2
+
+Number of steps to solve to 1e-12 accuracy: 6
+
+xc =
+    1.0000
+    1.0000
+    1.0000
+
+Backwards Error = 8.43769e-15
+Forwards Error = 4.21885e-15
+
+=== Q5b: ===
+
+--- Solution Point 1: ---
+x0 =
+    -2
+    -2
+    -2
+
+Number of steps to solve to 1e-12 accuracy: 11
+
+xc =
+    1.0000
+    2.0000
+    3.0000
+
+Backwards Error = 7.10543e-15
+Forwards Error = 7.77156e-16
+
+--- Solution Point 2: ---
+x0 =
+     2
+     2
+     2
+
+Number of steps to solve to 1e-12 accuracy: 5
+
+xc =
+    1.8889
+    2.4444
+    2.1111
+
+Backwards Error = 3.55271e-15
+Forwards Error = 2.22045e-15
+
+=== Q9a: ===
+
+--- Solution Point 1: ---
+x0 =
+     0
+     0
+     0
+
+Number of steps to solve to 1e-12 accuracy: 11
+
+xc =
+    0.3333
+    0.3333
+    0.3333
+
+Backwards Error = 8.88178e-16
+Forwards Error = 4.44089e-16
+
+--- Solution Point 2: ---
+x0 =
+     2
+     2
+     2
+
+Number of steps to solve to 1e-12 accuracy: 15
+
+xc =
+    1.0000
+    1.0000
+    1.0000
+
+Backwards Error = 1.38112e-13
+Forwards Error = 6.90559e-14
+
+=== Q9b: ===
+
+--- Solution Point 1: ---
+x0 =
+    -2
+    -2
+    -2
+
+Number of steps to solve to 1e-12 accuracy: 21
+
+xc =
+    1.0000
+    2.0000
+    3.0000
+
+Backwards Error = 2.98428e-13
+Forwards Error = 1.44773e-13
+
+--- Solution Point 2: ---
+x0 =
+     2
+     2
+     2
+
+Number of steps to solve to 1e-12 accuracy: 22
+
+xc =
+    1.8889
+    2.4444
+    2.1111
+
+Backwards Error = 2.4869e-14
+Forwards Error = 1.02141e-14
+
+=== Q11a: ===
+
+--- Solution Point 1: ---
+x0 =
+     0
+     0
+     0
+
+Number of steps to solve to 1e-12 accuracy: 9
+
+xc =
+    0.3333
+    0.3333
+    0.3333
+
+Backwards Error = 4.44089e-16
+Forwards Error = 1.66533e-16
+
+--- Solution Point 2: ---
+x0 =
+     2
+     2
+     2
+
+Number of steps to solve to 1e-12 accuracy: 15
+
+xc =
+    1.0000
+    1.0000
+    1.0000
+
+Backwards Error = 1.64313e-14
+Forwards Error = 8.21565e-15
+
+=== Q11b: ===
+
+--- Solution Point 1: ---
+x0 =
+    -2
+    -2
+    -2
+
+Number of steps to solve to 1e-12 accuracy: 21
+
+xc =
+    1.0000
+    2.0000
+    3.0000
+
+Backwards Error = 3.94351e-13
+Forwards Error = 1.94955e-13
+
+--- Solution Point 2: ---
+x0 =
+     2
+     2
+     2
+
+Number of steps to solve to 1e-12 accuracy: 22
+
+xc =
+    1.8889
+    2.4444
+    2.1111
+
+Backwards Error = 1.77636e-14
+Forwards Error = 5.55112e-15
