@@ -1,0 +1,26 @@
+MATH 446: Project 10
+Written by Zachary Ferguson
+
+=== Section 3.1 (Pg. 151) ===
+
+Q4:
+	cos1(x) = (((1.138719e-01 * (x - 1.0472) + -0.42321) * (x - 0.523599) + -0.255873) * (x - 0) + 1)
+	Fundamental Domain of cos: [0, PI/2]
+	See Figure 1 for plot of cos1.
+	forward error of cos1 = 0.00239175
+	See Figure 2 for plot of actual error of cos1(x).
+
+=== Section 3.2 (Pg. 157) ===
+
+Q1a:
+	P(x) = ((((4.000417e+00 * (x - 0.9) + 3.68067) * (x - 0.8) + 3.2589) * (x - 0.7) + 1.98987) * (x - 0.6) + 1.43333)
+Q1b:
+	P(0.82) = 1.95891
+	P(0.98) = 2.61285
+Q1c:
+	upper limit of error @ x = 0.82: 5.37359e-05
+	actual error @ x = 0.82: 2.33485e-05
+	upper limit of error @ x = 0.98: 0.000216572
+	actual error @ x = 0.98: 0.000106605
+Q1d:
+	See Figures 3 and 4 for plots of error.
