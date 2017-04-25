@@ -20,21 +20,14 @@ function main()
     coeffs = newtons_divided_differences(points);
     fprintf('--- Q3 ---\n\nPoints:\n');
     disp(points);
-    %p_str = newtdd_str(points, coeffs);
-    %fprintf('P(x) = %s\n', p_str);
+    p_str = newtdd_str(points, coeffs);
+    fprintf('\nP(x) = %s\n', p_str);
 
     figure;
-    x = linspace(1993, 2004);
+    x = linspace(1993, 2004, 200);
     y = eval_newtdd(points, coeffs, x);
-    plot(x, y);
+    plot(x, y, '-m');
     hold on;
-    plot(points(:, 1), points(:, 2), 'o')
-    hold off;
-    axis([1993 2004 60 90]);
-    legend('P(x)');
-    title('Q3: Total World Oil Production');
-    xlabel('year');
-    ylabel('bbl\day (x10^6)');
 
     fprintf('\nEstimate of oil production per day in 2010: %g\n', ...
         eval_newtdd(points, coeffs, 2010));
@@ -42,8 +35,33 @@ function main()
     fprintf('\nThis interpolation exhibits the Runge phenomenon.\n');
     fprintf('This interpolating polynomial is a bad model of the data\n');
     fprintf('because it does not model the data after the given points. \n');
-    fprintf('This model does not transition smoothly from point to point.\n');
+    fprintf('This model does not transition smoothly from point to point.\n\n');
 
-    natural_coeffs = cubic_spline(points);
+    fprintf('\n=== Section 3.4 (Pg. 178) ===\n\n');
+    
+    fprintf('--- Q13 ---\n\n');
+    
+    natural_coeffs = cubic_spline(points, 'natural');
+    fprintf('Natural Spline:\n\n      a    |    b    |    c\n');
     disp(natural_coeffs);
+    not_a_knot_coeffs = cubic_spline(points, 'not-a-knot');
+    fprintf('\nNot-a-Knot Spline:\n\n      a     |     b    |    c\n');
+    disp(not_a_knot_coeffs);
+    parabola_coeffs = cubic_spline(points, 'parabola');
+    fprintf('\nParaboloically Terminated Spline:\n\n      a    |    b    |    c\n');
+    disp(parabola_coeffs);
+    
+    y = eval_cubic_spline(points, natural_coeffs, x);
+    plot(x, y, '-r');
+    y = eval_cubic_spline(points, not_a_knot_coeffs, x);
+    plot(x, y, '-g');
+    y = eval_cubic_spline(points, parabola_coeffs, x);
+    plot(x, y, '-b');
+    plot(points(:, 1), points(:, 2), 'ok')
+    hold off;
+    axis([1993 2004 60 95]);
+    legend('Q_9(x)', 'Natural Spline', 'Not-a-Knot', 'Parabolically Terminated Spline');
+    title('Total World Oil Production');
+    xlabel('year');
+    ylabel('bbl\day (x10^6)');
 end
