@@ -38,9 +38,9 @@ function main()
     fprintf('This model does not transition smoothly from point to point.\n\n');
 
     fprintf('\n=== Section 3.4 (Pg. 178) ===\n\n');
-    
+
     fprintf('--- Q13 ---\n\n');
-    
+
     natural_coeffs = cubic_spline(points, 'natural');
     fprintf('Natural Spline:\n\n      a    |    b    |    c\n');
     disp(natural_coeffs);
@@ -48,9 +48,9 @@ function main()
     fprintf('\nNot-a-Knot Spline:\n\n      a     |     b    |    c\n');
     disp(not_a_knot_coeffs);
     parabola_coeffs = cubic_spline(points, 'parabola');
-    fprintf('\nParaboloically Terminated Spline:\n\n      a    |    b    |    c\n');
+    fprintf('\Parabolically Terminated Spline:\n\n      a    |    b    |    c\n');
     disp(parabola_coeffs);
-    
+
     y = eval_cubic_spline(points, natural_coeffs, x);
     plot(x, y, '-r');
     y = eval_cubic_spline(points, not_a_knot_coeffs, x);
@@ -63,5 +63,5 @@ function main()
     legend('Q_9(x)', 'Natural Spline', 'Not-a-Knot', 'Parabolically Terminated Spline');
     title('Total World Oil Production');
     xlabel('year');
-    ylabel('bbl\day (x10^6)');
+    ylabel('bbl\\day (x10^6)');
 end
