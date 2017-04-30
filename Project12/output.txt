@@ -1,0 +1,37 @@
+MATH 446: Project 12
+Written by Zachary Ferguson
+
+=== Q6 ===
+
+Points:
+    1.0000    6.2000
+    2.0000    9.5000
+    3.0000   12.3000
+    4.0000   13.9000
+    5.0000   14.6000
+    6.0000   13.5000
+    7.0000   13.3000
+    8.0000   12.7000
+    9.0000   12.4000
+   10.0000   11.9000
+
+Model: f(t) = 7.12203 * t * e^(-0.183849 * t)
+
+Maximum blood stream concentration: 14.2511 ng/ml
+Half-life of the drug: 9.12894 hours
+Start of therapeutic range: 0.630686 hours
+End of therapeutic range: 19.2145 hours
+Duration of therapeutic range: 18.5838 hours
+
+=== Q7 ===
+
+Points: See windmill.txt
+
+Model: f(t) = 229.711 + 33.5316 * cos(2*pi*t) + 25.5689* sin(2*pi*t) + -22.1627 * cos(4*pi*t)
+
+This model accurately captures the periodic cycle of energy
+usage. The model also represents the decrease in energy usage
+during temperate months. Energy usage decreases in spring as
+users turn off central heating. Energy usage increases in the
+summer as users start to turn on air conditioning. The presented
+model captures this trend.
